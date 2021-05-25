@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: center;
 }
+/*quitar el padding por default en html*/
+body{
+    margin: 0px;
+}
 
 /*estas son las fuentes*/
 html{
@@ -13,11 +17,17 @@ html{
 /*quitar underline a los links*/
 a{
     text-decoration: none;
+    color: #307052;
 }
 
 /*poner en mayuscula los titulos*/
 .title{
     text-transform: uppercase;
+}
+
+/*estilizar parrafos*/
+.paragraph{
+    line-height: 1.8em;
 }
 
 .content{
@@ -26,6 +36,9 @@ a{
     width: 100%;
     height:100%;
     background-color: white;
+    /*agregar sombra al div del contenido*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px rgba(0,0,0,0.23);
+    border-radius: 10px;
 }
 .red{
     height: 200px;
@@ -38,7 +51,43 @@ a{
 
 }
 
-td{
-    border:1px solid;
-    color:black;
+/*cambiar el color de las estrellas*/
+.fa-star{
+    color:#ffc400;  
+}
+
+
+/*modificar la tabla*/
+.table{
+    width:100%;
+    border-spacing: 0px;
+}
+
+/*para darle formato a la tabla*/
+.table th, .table td{
+    padding: 1em;
+    text-align: left;
+    
+}
+
+/*pintar de colores los registros de la tabla*/
+.table tr:nth-child(even){
+    background-color: #f3e5f5;
+}
+
+.title-item{
+    
+    /*border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #ff9e0d;*/
+    border-bottom: #ff9e0d solid 2px ;
+    padding-bottom:1em;
+}
+
+.position{
+    background-color: #ff9e0d;
+    color:white;
+    padding:10px;
+    border-radius: 4px;
+    
 }
