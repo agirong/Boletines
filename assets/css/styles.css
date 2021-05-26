@@ -39,7 +39,32 @@ a{
     /*agregar sombra al div del contenido*/
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px rgba(0,0,0,0.23);
     border-radius: 10px;
+    /*cambiar la posicion del div del contenido*/
+    position: relative;
+
 }
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.close{
+    height:40px;
+    width:40px;
+    color:white;
+    text-transform: capitalize;
+    border-radius: 50px;
+    background-color:#00b862;
+    display:inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .red{
     height: 200px;
     width: 100px;
@@ -89,5 +114,5 @@ a{
     color:white;
     padding:10px;
     border-radius: 4px;
-    
+
 }
