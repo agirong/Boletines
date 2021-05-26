@@ -33,17 +33,33 @@ a{
 
 .content{
     max-width: 960px;
-    max-height: 500px;
     width: 100%;
-    height:100%;
+    height: 80vh;
     background-color: white;
     /*agregar sombra al div del contenido*/
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px rgba(0,0,0,0.23);
     border-radius: 10px;
     /*cambiar la posicion del div del contenido*/
     position: relative;
-    padding: 1.8em;
+    overflow: scroll;
 }
+
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bolder;
+    color:#307052;
+}
+th{
+    display: none;
+}
+
 
 .actions{
     position: absolute;
@@ -114,7 +130,7 @@ a{
 .position{
     background-color: #ff9e0d;
     color:white;
-    padding: 0.7em;;
+    padding: 0.5em;;
     border-radius: 4px;
     margin-right: 0.5em;
 
@@ -130,6 +146,8 @@ a:hover{
     font-weight: bold;
     color:#00b862;
     font-size: 1.2em;
+    display: inline-block;
+    margin-top: 2em;
 }
 /*modificar imagenes*/
 .main-image{
@@ -137,3 +155,35 @@ a:hover{
     margin-right:1em;
     height: 250px;
 }
+
+
+@media (max-width:900px){
+    th{
+        display: table-cell;
+    }
+    td{
+        width: auto;
+        display: table-cell;
+    }
+    td:nth-of-type(1){
+
+    }
+    .content{
+        padding: 1.8em;
+    }
+}
+    
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+}
+/*evitar que las img se salgan del contenido*/
+img{
+    max-width: 100%;
+}
+
+
+
+
